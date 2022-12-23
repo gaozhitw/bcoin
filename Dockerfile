@@ -4,7 +4,7 @@ RUN mkdir /code
 WORKDIR /code
 CMD ["bcoin", "--prefix", "/data", "--spv"]
 
-ENV BCOIN_VERSION=${BCOIN_VERSION} \
+ENV BCOIN_VERSION=v2.2.0 \
     BCOIN_REPO=https://github.com/bcoin-org/bcoin.git
 
 RUN apk upgrade --no-cache && \
